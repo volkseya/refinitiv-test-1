@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kstone-test": {
+    "refinitiv-test-1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kstone-test",
+            "outputPath": "dist/refinitiv-test-1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kstone-test:build"
+            "browserTarget": "refinitiv-test-1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kstone-test:build:production"
+              "browserTarget": "refinitiv-test-1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kstone-test:build"
+            "browserTarget": "refinitiv-test-1:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kstone-test:serve"
+            "devServerTarget": "refinitiv-test-1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kstone-test:serve:production"
+              "devServerTarget": "refinitiv-test-1:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "kstone-test"
+  "defaultProject": "refinitiv-test-1"
 }
